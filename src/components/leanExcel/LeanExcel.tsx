@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {Grid} from '../Grid/Grid';
-import {InputBox} from '../InputBox/InputBox';
+import {InputBox} from '../inputBox/InputBox';
+import {Grid} from '../grid/Grid';
 
-export const LeanExcel: React.FC = () => {
+const LeanExcel: React.FC = () => {
     const cellExpressions: Record<string, string> = {};
 
     const [cellSelected, setCellSelected] = useState<string>('A1');
@@ -20,4 +20,4 @@ export const LeanExcel: React.FC = () => {
 };
 
 
-
+export {LeanExcel};

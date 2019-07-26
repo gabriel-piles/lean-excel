@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import { LeanExcel } from './components/LeanExcel/LeanExcel';
+import { LeanExcel } from './components/leanExcel/LeanExcel';
 
 const App: React.FC = () => {
   return (
-      <LeanExcel></LeanExcel>
+      <LeanExcel/>
   );
 };
 
