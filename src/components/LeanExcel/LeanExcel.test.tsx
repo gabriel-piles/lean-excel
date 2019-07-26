@@ -8,4 +8,5 @@ it('change cell value', () => {
     wrapper.find('InputBox').props<>().updateCellExpression('1');
 
     expect(wrapper.find('Grid').props<>().cellValues).toEqual({A1: '1'})
+    expect(wrapper.find('InputBox').props<>().cellSelected).toEqual('A1')
 });

@@ -11,10 +11,12 @@ export const LeanExcel: React.FC = () => {
         cellExpressions[cellSelected] = expression;
     };
 
-    return ( <div>
-        <InputBox cellSelected={cellSelected} updateCellExpression={updateCellExpression}/>
-        <Grid setCellSelected = {setCellSelected} cellValues={cellExpressions}/>
-    </div>);
+    return (
+        <div>
+            <InputBox cellSelected={cellSelected} updateCellExpression={updateCellExpression}/>
+            <Grid setCellSelected = {setCellSelected} cellValues={cellExpressions}/>
+        </div>
+    );
 };
 
 
