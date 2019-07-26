@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class InputBox extends Component {
-    render() {
-        return (
-            <div>input</div>
-        )
-    }
+interface InputBoxProps {
+    cellSelected: string;
+    updateCellExpression: any;
 }
 
-export default InputBox;
+export const InputBox: React.FC<InputBoxProps> = () => {
+    return null;
+};

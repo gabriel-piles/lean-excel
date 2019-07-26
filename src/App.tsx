@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import InputBox from './components/InputBox/InputBox';
+import { LeanExcel } from './components/LeanExcel/LeanExcel';
 
 const App: React.FC = () => {
   return (
-    <InputBox></InputBox>
+      <LeanExcel></LeanExcel>
   );
 };
 
