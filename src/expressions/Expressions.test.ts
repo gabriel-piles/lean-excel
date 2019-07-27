@@ -37,4 +37,14 @@ describe('Expressions to values', () => {
         expect(expressions.toValues().key2).toEqual( '12=');
     });
 
+    it('returns #ERROR when the formula is not valid', () => {
+        const expressions = new Expressions();
+
+        expressions.set('key1', '=notvalidformula');
+        expressions.set('key2', '=other not valid formul;a');
+
+        expect(expressions.toValues().key1).toEqual( '#ERROR');
+        expect(expressions.toValues().key2).toEqual( '#ERROR');
+    });
+
 });

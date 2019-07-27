@@ -20,11 +20,16 @@ class Expressions {
 
     private evaluateExpression(expression: string): string {
 
-        const myRe = /^=/;
+        if (/^=/.exec(expression)) {
+            const formula = expression.replace('=', '');
 
-        if (myRe.exec(expression)) {
-            return expression.replace('=', '');
+            if (/^[0-9]+$/.exec(formula)){
+                return expression.replace('=', '');
+            }
+
+            return '#ERROR';
         }
+
         return expression;
     }
 
