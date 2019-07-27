@@ -30,11 +30,13 @@ describe('Expressions to values', () => {
     it('returns formula result when it is a number', () => {
         const expressions = new Expressions();
 
-        expressions.set('A1', '12=');
-        expressions.set('A2', '=12');
+        expressions.set('A1', '=12');
+        expressions.set('A2', '=13');
+        expressions.set('A3', '=');
 
-        expect(expressions.toValues().A1).toEqual( '12=');
-        expect(expressions.toValues().A2).toEqual( '12');
+        expect(expressions.toValues().A1).toEqual( '12');
+        expect(expressions.toValues().A2).toEqual( '13');
+        expect(expressions.toValues().A3).toEqual( '0');
     });
 
     it('returns formula result without spaces', () => {

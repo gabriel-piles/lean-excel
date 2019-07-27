@@ -31,6 +31,10 @@ class Expressions {
     }
 
     private evaluateFormula(formula: string, expressionsDictionary: ExpressionsDictionary) : string {
+        if(/^\s*$/.exec(formula)){
+            return '0';
+        }
+
         if(/^[A-Z]{1}[0-9]{1}/.exec(formula)){
             return expressionsDictionary[formula];
         }
