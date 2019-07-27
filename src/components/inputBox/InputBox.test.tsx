@@ -4,7 +4,7 @@ import {InputBox} from './InputBox';
 
 it('display expression', () => {
     const wrapper = shallow(<InputBox cellSelected={'A1'} expression={'expression'} updateCellExpression={jest.fn()}/>);
-    expect(wrapper.find('.input-box').props().defaultValue).toEqual('expression')
+    expect(wrapper.find('.input-box').props().defaultValue).toEqual('expression');
 });
 
 it('display cell selected', () => {

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91cd38fe-f26e-46ce-90d8-69d3ec720cec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.test.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -28,10 +28,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="362">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -101,16 +122,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" />
         <option value="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" />
-        <option value="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" />
         <option value="$PROJECT_DIR$/src/components/grid/Grid.tsx" />
         <option value="$PROJECT_DIR$/src/components/grid/Grid.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/expressions/ExpressionsDictionary.ts" />
         <option value="$PROJECT_DIR$/src/expressions/ValueDictionary.ts" />
-        <option value="$PROJECT_DIR$/src/expressions/Expressions.ts" />
         <option value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
+        <option value="$PROJECT_DIR$/src/expressions/Expressions.ts" />
+        <option value="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" />
+        <option value="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" />
       </list>
     </option>
   </component>
@@ -151,6 +172,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="grid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="inputBox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="leanExcel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
@@ -215,7 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Expressions to values">
+  <component name="RunManager" selected="Jest.InputBox.test.tsx">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -239,34 +274,6 @@
       <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
       <test-names>
         <test-name value="Expressions to values" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Expressions to values.returns #ERROR when the formula is a string" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
-      <test-names>
-        <test-name value="Expressions to values" />
-        <test-name value="returns #ERROR when the formula is a string" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Expressions to values.returns #ERROR when the formula is not valid" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
-      <test-names>
-        <test-name value="Expressions to values" />
-        <test-name value="returns #ERROR when the formula is not valid" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -298,6 +305,29 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="InputBox.test.tsx" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" />
+      <method v="2" />
+    </configuration>
+    <configuration name="display expression" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" />
+      <test-names>
+        <test-name value="display expression" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -309,11 +339,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.InputBox.test.tsx" />
+        <item itemvalue="Jest.display expression" />
         <item itemvalue="Jest.Expressions to values" />
         <item itemvalue="Jest.Expressions to values.returns value from other key" />
         <item itemvalue="Jest.Expressions to values.returns formula result without spaces" />
-        <item itemvalue="Jest.Expressions to values.returns #ERROR when the formula is not valid" />
-        <item itemvalue="Jest.Expressions to values.returns #ERROR when the formula is a string" />
       </list>
     </recent_temporary>
   </component>
@@ -337,26 +367,11 @@
       <workItem from="1564003946592" duration="2030000" />
       <workItem from="1564171912542" duration="14232000" />
       <workItem from="1564238425787" duration="352000" />
-      <workItem from="1564238858682" duration="11912000" />
+      <workItem from="1564238858682" duration="13115000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Expressions_to_values_returns_#ERROR_when_the_formula_is_not_valid - 2019.07.27 at 19h 56m 05s.xml">
-      <configuration name="Expressions to values.returns #ERROR when the formula is not valid" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 02m 55s.xml">
-      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 04m 03s.xml">
-      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 06m 09s.xml">
-      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 06m 17s.xml">
-      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 06m 32s.xml">
       <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -372,9 +387,24 @@
     <history-entry file="Expressions_to_values - 2019.07.27 at 20h 12m 05s.xml">
       <configuration name="Expressions to values" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="Expressions_to_values - 2019.07.27 at 20h 16m 59s.xml">
+      <configuration name="Expressions to values" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="display_expression - 2019.07.27 at 21h 22m 16s.xml">
+      <configuration name="display expression" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="display_expression - 2019.07.27 at 21h 22m 28s.xml">
+      <configuration name="display expression" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="InputBox_test_tsx - 2019.07.27 at 21h 22m 49s.xml">
+      <configuration name="InputBox.test.tsx" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="InputBox_test_tsx - 2019.07.27 at 21h 23m 02s.xml">
+      <configuration name="InputBox.test.tsx" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11912000" />
+    <option name="totallyTimeSpent" value="13115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1883" height="1027" extended-state="0" />
@@ -529,16 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -549,27 +569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.test.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -590,20 +593,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="362">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.test.ts">
+    <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="420">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
