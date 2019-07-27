@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fda3d56a-42bd-455b-a215-1cab2927f8c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/expressions/Expressions_.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Grid/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InputBox/InputBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeanExcel/LeanExcel.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LeanExcel/LeanExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="135">
+              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -33,10 +34,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="285">
+                <caret line="19" column="18" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="18" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="165">
+              <caret line="11" column="59" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="59" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -47,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="60">
+              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -56,8 +69,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state relative-caret-position="45">
+              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -77,19 +93,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="316">
+              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>lodash.templat</find>
       <find>lodash.t</find>
       <find>shallo</find>
+      <find>estree</find>
+      <find>loda</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -109,10 +134,15 @@
         <option value="$PROJECT_DIR$/src/components/InputBox/InputBox.tsx" />
         <option value="$PROJECT_DIR$/src/App.test.tsx" />
         <option value="$PROJECT_DIR$/src/components/LeanExcel/LeanExcel.test.tsx" />
-        <option value="$PROJECT_DIR$/src/components/grid/Grid.tsx" />
         <option value="$PROJECT_DIR$/src/components/index.tsx" />
         <option value="$PROJECT_DIR$/src/components/LeanExcel/LeanExcel.tsx" />
+        <option value="$PROJECT_DIR$/src/expressions/expressions.ts" />
+        <option value="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" />
+        <option value="$PROJECT_DIR$/src/expressions/Expressions.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx" />
+        <option value="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx" />
+        <option value="$PROJECT_DIR$/src/components/grid/Grid.tsx" />
         <option value="$PROJECT_DIR$/src/App.tsx" />
       </list>
     </option>
@@ -167,6 +197,12 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="leanExcel" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="expressions" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -191,7 +227,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.tslint" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -220,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.change cell value">
+  <component name="RunManager" selected="Jest.change cell value (1)">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -233,6 +269,16 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="LeanExcel.test.tsx" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx" />
+      <method v="2" />
     </configuration>
     <configuration name="a cell is the sum of two other cells" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
@@ -247,6 +293,19 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="change cell value (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx" />
+      <test-names>
+        <test-name value="change cell value" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="change cell value" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -257,19 +316,6 @@
       <test-file value="$PROJECT_DIR$/src/components/LeanExcel/LeanExcel.test.tsx" />
       <test-names>
         <test-name value="change cell value" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="renders without crashing (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/tests/App.test.tsx" />
-      <test-names>
-        <test-name value="renders without crashing" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -297,10 +343,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.change cell value (1)" />
+        <item itemvalue="Jest.LeanExcel.test.tsx" />
         <item itemvalue="Jest.change cell value" />
         <item itemvalue="Jest.a cell is the sum of two other cells" />
         <item itemvalue="Jest.renders without crashing" />
-        <item itemvalue="Jest.renders without crashing (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -322,50 +369,50 @@
       <option name="presentableId" value="Default" />
       <updated>1564003943805</updated>
       <workItem from="1564003946592" duration="2030000" />
-      <workItem from="1564171912542" duration="9948000" />
+      <workItem from="1564171912542" duration="14232000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="change_cell_value - 2019.07.27 at 00h 39m 31s.xml">
-      <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="change_cell_value - 2019.07.27 at 00h 39m 36s.xml">
-      <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="change_cell_value - 2019.07.27 at 00h 39m 50s.xml">
-      <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="change_cell_value - 2019.07.27 at 00h 40m 16s.xml">
-      <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="change_cell_value - 2019.07.27 at 00h 46m 14s.xml">
-      <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="change_cell_value - 2019.07.27 at 00h 46m 38s.xml">
-      <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="change_cell_value - 2019.07.27 at 00h 46m 54s.xml">
-      <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="change_cell_value - 2019.07.27 at 01h 01m 11s.xml">
-      <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="change_cell_value - 2019.07.27 at 01h 03m 04s.xml">
       <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
     <history-entry file="change_cell_value - 2019.07.27 at 01h 04m 53s.xml">
       <configuration name="change cell value" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="change_cell_value_(1) - 2019.07.27 at 10h 59m 59s.xml">
+      <configuration name="change cell value (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="LeanExcel_test_tsx - 2019.07.27 at 12h 03m 31s.xml">
+      <configuration name="LeanExcel.test.tsx" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="change_cell_value_(1) - 2019.07.27 at 12h 04m 01s.xml">
+      <configuration name="change cell value (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="change_cell_value_(1) - 2019.07.27 at 12h 24m 21s.xml">
+      <configuration name="change cell value (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="change_cell_value_(1) - 2019.07.27 at 12h 25m 00s.xml">
+      <configuration name="change cell value (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="change_cell_value_(1) - 2019.07.27 at 12h 25m 53s.xml">
+      <configuration name="change cell value (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="change_cell_value_(1) - 2019.07.27 at 12h 26m 14s.xml">
+      <configuration name="change cell value (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="change_cell_value_(1) - 2019.07.27 at 12h 45m 33s.xml">
+      <configuration name="change cell value (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11978000" />
+    <option name="totallyTimeSpent" value="16262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -380,7 +427,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.7112299" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -444,14 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-105" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yarn.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -467,13 +506,6 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#1044#1188#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -504,30 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -538,20 +546,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="19" column="18" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="165">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="59" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.tsx">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

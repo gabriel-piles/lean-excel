@@ -1,8 +1,9 @@
 import React from "react";
+import {ValuesDictionary} from '../../expressions/Expressions_';
 
 interface GridProps {
-    setCellSelected: any;
-    cellValues: Record<string, string>;
+    setCellSelected(cellSelected: string): any;
+    cellValues: ValuesDictionary;
 }
 
 export const Grid: React.FC<GridProps> = () => {
