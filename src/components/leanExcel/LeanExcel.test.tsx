@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import {LeanExcel} from './LeanExcel';
-import {Expressions, ExpressionsDictionary} from '../../expressions/Expressions_';
+import {Expressions, ExpressionsDictionary, ValuesDictionary} from '../../expressions/Expressions';
 import _ from 'lodash';
 
 class ExpressionsStub implements Expressions{
@@ -11,8 +11,9 @@ class ExpressionsStub implements Expressions{
         this.cellExpressions[key] = expression;
     }
 
-    public toValues(){
-        return _.mapValues(this.cellExpressions, (eachExpression) => eachExpression + '_evaluated');
+    public toValues():ValuesDictionary{
+        let values = _.mapValues(this.cellExpressions, (eachExpression) => eachExpression + '_evaluated');
+        return values;
     }
 }
 

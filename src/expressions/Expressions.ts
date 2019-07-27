@@ -14,7 +14,7 @@ class Expressions{
 
     }
 
-    public toValues(){
+    public toValues():ValuesDictionary{
         const values: ValuesDictionary = {};
         return values;
     }

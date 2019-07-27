@@ -1,5 +1,5 @@
 import React from "react";
-import {ValuesDictionary} from '../../expressions/Expressions_';
+import {ValuesDictionary} from '../../expressions/Expressions';
 
 interface GridProps {
     setCellSelected(cellSelected: string): any;
