@@ -4,7 +4,7 @@ import {LeanExcel} from './LeanExcel';
 import {Expressions, ExpressionsDictionary, ValuesDictionary} from '../../expressions/Expressions';
 import _ from 'lodash';
 
-class ExpressionsStub implements Expressions{
+class ExpressionsStub extends Expressions{
     private cellExpressions: ExpressionsDictionary = {};
 
     public set(key:string, expression:string){
@@ -15,7 +15,21 @@ class ExpressionsStub implements Expressions{
         let values = _.mapValues(this.cellExpressions, (eachExpression) => eachExpression + '_evaluated');
         return values;
     }
+
+    get(key: string):string {
+        return this.cellExpressions[key];
+    }
 }
+
+it('update input when cell selected', () => {
+    let expressionsStub = new ExpressionsStub();
+    expressionsStub.set('A2', 'an expression')
+    const wrapper = shallow(<LeanExcel expressions={expressionsStub}/>);
+    wrapper.find('Grid').props().setCellSelected('A2');
+
+    expect(wrapper.find('InputBox').props().cellSelected).toEqual('A2');
+    expect(wrapper.find('InputBox').props().expression).toEqual('an expression');
+});
 
 it('change cell value', () => {
     const wrapper = shallow(<LeanExcel expressions={new ExpressionsStub()}/>);

@@ -10,6 +10,7 @@ interface LeanExcelProps {
 const LeanExcel: React.FC<LeanExcelProps> = (props) => {
     const {expressions} = props;
     const [cellSelected, setCellSelected] = useState<string>('A1');
+    const [expression, setExpression] = useState<string>('');
     const [valuesDictionary, setValuesDictionary] = useState<ValuesDictionary>({});
 
     const updateCellExpression = (expression: string) => {
@@ -17,10 +18,15 @@ const LeanExcel: React.FC<LeanExcelProps> = (props) => {
         setValuesDictionary(expressions.toValues());
     };
 
+    const updateCellSelected = (cellSelected: string) => {
+        setCellSelected(cellSelected);
+        setExpression(expressions.get(cellSelected));
+    };
+
     return (
         <div>
-            <InputBox cellSelected={cellSelected} updateCellExpression={updateCellExpression}/>
-            <Grid setCellSelected = {setCellSelected} cellValues={valuesDictionary}/>
+            <InputBox cellSelected={cellSelected} expression={expression} updateCellExpression={updateCellExpression}/>
+            <Grid setCellSelected = {updateCellSelected} cellValues={valuesDictionary}/>
         </div>
     );
 };

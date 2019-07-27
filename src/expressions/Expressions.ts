@@ -18,6 +18,10 @@ class Expressions{
         const values: ValuesDictionary = {};
         return values;
     }
+
+    get(key: string):string {
+        return '';
+    }
 }
 
 export {Expressions};
