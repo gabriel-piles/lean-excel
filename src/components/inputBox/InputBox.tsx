@@ -15,7 +15,7 @@ export const InputBox: React.FC<InputBoxProps> = (props) => {
     return (
         <div>
             <span className='cell-name'>{props.cellSelected}</span>
-            <input className="input-box" type='text' value={props.expression} onChange={updateExpression}/>
+            <input className="input-box" type='text' defaultValue={props.expression} onChange={updateExpression}/>
         </div>
         );
 };

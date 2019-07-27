@@ -1,0 +1,10 @@
+.column{
+    width: 250px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

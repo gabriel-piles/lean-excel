@@ -1,6 +1,7 @@
 import React from "react";
 import {ValuesDictionary} from '../../expressions/Expressions';
 import _ from "lodash";
+import './Grid.css';
 
 const COLUMN_NAMES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const ROW_NUMBER = 50;
@@ -10,14 +11,23 @@ interface GridProps {
     cellValues: ValuesDictionary;
 }
 
-export const Grid: React.FC<GridProps> = () => {
+export const Grid: React.FC<GridProps> = (props) => {
+    const updateCellSelected = (cellSelected:string) => {
+        props.setCellSelected(cellSelected);
+    };
+
     return (
         <table>
-            {_.times(ROW_NUMBER,(row_index) => <tr className={'row'}>
+            <tbody>
+            {_.times(ROW_NUMBER,(row_index) => <tr key={`row${row_index}`} className={'row'}>
                 {COLUMN_NAMES.map((column_name) => {
-                    return <td className={`column ${column_name}${row_index+1}`}></td>
+                    const cellId = column_name + (row_index+1);
+                    return <td key={cellId} id={cellId} className={`column ${cellId}`} onClick={(e) => updateCellSelected(e.currentTarget.id)}>
+                        {props.cellValues[cellId] ? props.cellValues[cellId] : ''}
+                    </td>
                 })}
             </tr>)}
+            </tbody>
         </table>
     );
 };

@@ -6,5 +6,15 @@ it('initialize grid', () => {
     const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} setCellSelected={jest.fn}/>);
     expect(wrapper.find('.row').length).toEqual(50);
     expect(wrapper.find('.column').length).toEqual(26*50);
-    expect(wrapper.find('.column').get(0).props.className).toContain('A1');
+    expect(wrapper.findWhere(node => node.key() === 'A1').get(0).props.className).toContain('A1');
+    expect(wrapper.findWhere(node => node.key() === 'A1').text()).toContain('A1 value');
+});
+
+it('update cell selected', () => {
+    let cellSelectedSpy = jest.fn();
+    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} setCellSelected={cellSelectedSpy}/>);
+
+    wrapper.findWhere(node => node.key() === 'Z50').simulate('click', {currentTarget: {id: 'Z50'}});
+
+    expect(cellSelectedSpy).toHaveBeenCalledWith('Z50');
 });

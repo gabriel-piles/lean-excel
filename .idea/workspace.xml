@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91cd38fe-f26e-46ce-90d8-69d3ec720cec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/grid/Grid.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,20 +23,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.test.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="270">
+              <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -42,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+            <state relative-caret-position="360">
+              <caret line="24" column="140" lean-forward="true" selection-start-line="24" selection-start-column="123" selection-end-line="24" selection-end-column="140" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -52,10 +45,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="105">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -95,9 +106,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" />
-        <option value="$PROJECT_DIR$/src/components/grid/Grid.tsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" />
+        <option value="$PROJECT_DIR$/src/components/grid/Grid.tsx" />
+        <option value="$PROJECT_DIR$/src/components/grid/Grid.css" />
+        <option value="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" />
+        <option value="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" />
       </list>
     </option>
   </component>
@@ -120,6 +134,11 @@
             <path>
               <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
               <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
@@ -201,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.initialize grid">
+  <component name="RunManager" selected="Jest.display expression">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -215,16 +234,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputBox.test.tsx" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" />
-      <method v="2" />
-    </configuration>
     <configuration name="LeanExcel.test.tsx" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -235,16 +244,16 @@
       <test-file value="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx" />
       <method v="2" />
     </configuration>
-    <configuration name="change cell value (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="display expression" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/leanExcel/LeanExcel.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" />
       <test-names>
-        <test-name value="change cell value" />
+        <test-name value="display expression" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -258,6 +267,19 @@
       <test-file value="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" />
       <test-names>
         <test-name value="initialize grid" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="update cell selected" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" />
+      <test-names>
+        <test-name value="update cell selected" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -285,11 +307,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.display expression" />
+        <item itemvalue="Jest.update cell selected" />
         <item itemvalue="Jest.initialize grid" />
         <item itemvalue="Jest.LeanExcel.test.tsx" />
         <item itemvalue="Jest.update input when cell selected" />
-        <item itemvalue="Jest.change cell value (1)" />
-        <item itemvalue="Jest.InputBox.test.tsx" />
       </list>
     </recent_temporary>
   </component>
@@ -313,44 +335,44 @@
       <workItem from="1564003946592" duration="2030000" />
       <workItem from="1564171912542" duration="14232000" />
       <workItem from="1564238425787" duration="352000" />
-      <workItem from="1564238858682" duration="2583000" />
+      <workItem from="1564238858682" duration="6050000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 23m 02s.xml">
+    <history-entry file="initialize_grid - 2019.07.27 at 17h 48m 17s.xml">
       <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 23m 07s.xml">
+    <history-entry file="initialize_grid - 2019.07.27 at 17h 48m 20s.xml">
       <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 23m 22s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="update_cell_selected - 2019.07.27 at 17h 50m 29s.xml">
+      <configuration name="update cell selected" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 25m 34s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="update_cell_selected - 2019.07.27 at 17h 50m 51s.xml">
+      <configuration name="update cell selected" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 25m 48s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="update_cell_selected - 2019.07.27 at 17h 53m 14s.xml">
+      <configuration name="update cell selected" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 26m 49s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="update_cell_selected - 2019.07.27 at 17h 55m 05s.xml">
+      <configuration name="update cell selected" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 27m 20s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="update_cell_selected - 2019.07.27 at 17h 55m 09s.xml">
+      <configuration name="update cell selected" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 29m 49s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="update_cell_selected - 2019.07.27 at 18h 30m 17s.xml">
+      <configuration name="update cell selected" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 29m 52s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="update_cell_selected - 2019.07.27 at 18h 30m 47s.xml">
+      <configuration name="update cell selected" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 30m 20s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="display_expression - 2019.07.27 at 18h 31m 23s.xml">
+      <configuration name="display expression" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2583000" />
+    <option name="totallyTimeSpent" value="6050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1883" height="1027" extended-state="0" />
@@ -364,7 +386,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -372,7 +394,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5240642" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -427,67 +449,71 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>wrapper.find('.column').get(0).props.className</expression-string>
+        <expression-string>wrapper.find('.input-box').props()</expression-string>
         <language-id>TypeScript JSX</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wrapper.find('.column').get(0)</expression-string>
+        <expression-string>wrapper.find('.input-box').props().value</expression-string>
         <language-id>TypeScript JSX</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wrapper.find('.column').get(0).props()</expression-string>
+        <expression-string>wrapper.findWhere(node =&gt; node.key() === 'A1').get(0).props.className</expression-string>
         <language-id>TypeScript JSX</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wrapper.find('.column').get(0).props().class</expression-string>
+        <expression-string>wrapper.findWhere(node =&gt; node.key() === 'A1').get(0).props.class</expression-string>
         <language-id>TypeScript JSX</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wrapper.find('.row')</expression-string>
+        <expression-string>wrapper.findWhere(node =&gt; node.key() === 'A1').get(0)</expression-string>
         <language-id>TypeScript JSX</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wrapper.find('.row').html</expression-string>
+        <expression-string>wrapper.findWhere(node =&gt; node.key() === 'A1')</expression-string>
         <language-id>TypeScript JSX</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wrapper.find('.row').html()</expression-string>
+        <expression-string>wrapper.findWhere(node =&gt; node.key() === 'A1').props()</expression-string>
         <language-id>TypeScript JSX</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wrapper.find('.row').get(0)</expression-string>
+        <expression-string>wrapper.findWhere(node =&gt; node.key() === 'A1').text()</expression-string>
         <language-id>TypeScript JSX</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>COLUMN_NAMES.map(() =&gt; &lt;td&gt;&lt;/td&gt;)</expression-string>
+        <expression-string>wrapper.find(`[key='A1']`)</expression-string>
         <language-id>TypeScript JSX</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        <state relative-caret-position="360">
+          <caret line="24" column="140" lean-forward="true" selection-start-line="24" selection-start-column="123" selection-end-line="24" selection-end-column="140" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -496,18 +522,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.test.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="270">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
