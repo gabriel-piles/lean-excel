@@ -18,8 +18,8 @@ class ExpressionsStub implements Expressions{
 
 it('change cell value', () => {
     const wrapper = shallow(<LeanExcel expressions={new ExpressionsStub()}/>);
-    wrapper.find('Grid').props<>().setCellSelected('A1');
-    wrapper.find('InputBox').props<>().updateCellExpression('1');
+    wrapper.find('Grid').props().setCellSelected('A1');
+    wrapper.find('InputBox').props().updateCellExpression('1');
 
-    expect(wrapper.find('Grid').props<>().cellValues).toEqual({A1: '1_evaluated'});
+    expect(wrapper.find('Grid').props().cellValues).toEqual({A1: '1_evaluated'});
 });

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {InputBox} from '../inputBox/InputBox';
 import {Grid} from '../grid/Grid';
-import {Expressions, ExpressionsDictionary, ValuesDictionary} from "../../expressions/Expressions_";
+import {Expressions, ValuesDictionary} from "../../expressions/Expressions_";
 
 interface LeanExcelProps {
     expressions: Expressions
