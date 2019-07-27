@@ -1,7 +1,7 @@
 import React from "react";
-import {ValuesDictionary} from '../../expressions/Expressions';
 import _ from "lodash";
 import './Grid.css';
+import {ValuesDictionary} from "../../expressions/ValueDictionary";
 
 const COLUMN_NAMES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const ROW_NUMBER = 50;

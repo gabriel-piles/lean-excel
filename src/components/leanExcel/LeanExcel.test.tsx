@@ -1,8 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import {LeanExcel} from './LeanExcel';
-import {Expressions, ExpressionsDictionary, ValuesDictionary} from '../../expressions/Expressions';
+import {Expressions} from '../../expressions/Expressions';
 import _ from 'lodash';
+import {ExpressionsDictionary} from "../../expressions/ExpressionsDictionary";
+import {ValuesDictionary} from "../../expressions/ValueDictionary";
 
 class ExpressionsStub extends Expressions{
     private cellExpressions: ExpressionsDictionary = {};
