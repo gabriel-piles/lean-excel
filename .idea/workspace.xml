@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91cd38fe-f26e-46ce-90d8-69d3ec720cec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.ts" afterDir="false" />
     </list>
@@ -17,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.test.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="360">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state relative-caret-position="390">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -86,9 +85,11 @@
       <find>loda</find>
       <find>&lt;&gt;</find>
       <find>inputBox</find>
+      <find>key3</find>
     </findStrings>
     <replaceStrings>
       <replace>input-box</replace>
+      <replace>A3</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -108,8 +109,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/expressions/ExpressionsDictionary.ts" />
         <option value="$PROJECT_DIR$/src/expressions/ValueDictionary.ts" />
-        <option value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
         <option value="$PROJECT_DIR$/src/expressions/Expressions.ts" />
+        <option value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
       </list>
     </option>
   </component>
@@ -214,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Expressions to values.returns #ERROR when the formula is a string">
+  <component name="RunManager" selected="Jest.Expressions to values">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -255,7 +256,7 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Expressions to values.returns formula result when it is a number" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Expressions to values.returns #ERROR when the formula is not valid" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -265,11 +266,11 @@
       <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
       <test-names>
         <test-name value="Expressions to values" />
-        <test-name value="returns formula result when it is a number" />
+        <test-name value="returns #ERROR when the formula is not valid" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Expressions to values.returns value from number formula" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Expressions to values.returns formula result without spaces" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -279,18 +280,22 @@
       <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
       <test-names>
         <test-name value="Expressions to values" />
-        <test-name value="returns value from number formula" />
+        <test-name value="returns formula result without spaces" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Expressions.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Expressions to values.returns value from other key" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST_FILE" />
+      <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
+      <test-names>
+        <test-name value="Expressions to values" />
+        <test-name value="returns value from other key" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
@@ -304,11 +309,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Expressions to values.returns #ERROR when the formula is a string" />
-        <item itemvalue="Jest.Expressions to values.returns formula result when it is a number" />
-        <item itemvalue="Jest.Expressions to values.returns value from number formula" />
         <item itemvalue="Jest.Expressions to values" />
-        <item itemvalue="Jest.Expressions.test.ts" />
+        <item itemvalue="Jest.Expressions to values.returns value from other key" />
+        <item itemvalue="Jest.Expressions to values.returns formula result without spaces" />
+        <item itemvalue="Jest.Expressions to values.returns #ERROR when the formula is not valid" />
+        <item itemvalue="Jest.Expressions to values.returns #ERROR when the formula is a string" />
       </list>
     </recent_temporary>
   </component>
@@ -332,44 +337,44 @@
       <workItem from="1564003946592" duration="2030000" />
       <workItem from="1564171912542" duration="14232000" />
       <workItem from="1564238425787" duration="352000" />
-      <workItem from="1564238858682" duration="10502000" />
+      <workItem from="1564238858682" duration="11912000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Expressions_to_values_returns_value_from_number_formula - 2019.07.27 at 19h 22m 48s.xml">
-      <configuration name="Expressions to values.returns value from number formula" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values_returns_#ERROR_when_the_formula_is_not_valid - 2019.07.27 at 19h 56m 05s.xml">
+      <configuration name="Expressions to values.returns #ERROR when the formula is not valid" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_when_it_is_a_number - 2019.07.27 at 19h 23m 00s.xml">
-      <configuration name="Expressions to values.returns formula result when it is a number" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 02m 55s.xml">
+      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_when_it_is_a_number - 2019.07.27 at 19h 30m 18s.xml">
-      <configuration name="Expressions to values.returns formula result when it is a number" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 04m 03s.xml">
+      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_when_it_is_a_number - 2019.07.27 at 19h 34m 33s.xml">
-      <configuration name="Expressions to values.returns formula result when it is a number" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 06m 09s.xml">
+      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_when_it_is_a_number - 2019.07.27 at 19h 34m 37s.xml">
-      <configuration name="Expressions to values.returns formula result when it is a number" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 06m 17s.xml">
+      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_when_it_is_a_number - 2019.07.27 at 19h 35m 49s.xml">
-      <configuration name="Expressions to values.returns formula result when it is a number" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 06m 32s.xml">
+      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_when_it_is_a_number - 2019.07.27 at 19h 35m 59s.xml">
-      <configuration name="Expressions to values.returns formula result when it is a number" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values_returns_formula_result_without_spaces - 2019.07.27 at 20h 06m 42s.xml">
+      <configuration name="Expressions to values.returns formula result without spaces" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Expressions_to_values_returns_formula_result_when_it_is_a_number - 2019.07.27 at 19h 36m 06s.xml">
-      <configuration name="Expressions to values.returns formula result when it is a number" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values_returns_value_from_other_key - 2019.07.27 at 20h 09m 20s.xml">
+      <configuration name="Expressions to values.returns value from other key" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Expressions_to_values_returns_#ERROR_when_the_formula_is_a_string - 2019.07.27 at 19h 39m 28s.xml">
-      <configuration name="Expressions to values.returns #ERROR when the formula is a string" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values - 2019.07.27 at 20h 11m 36s.xml">
+      <configuration name="Expressions to values" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Expressions_to_values_returns_#ERROR_when_the_formula_is_a_string - 2019.07.27 at 19h 45m 22s.xml">
-      <configuration name="Expressions to values.returns #ERROR when the formula is a string" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Expressions_to_values - 2019.07.27 at 20h 12m 05s.xml">
+      <configuration name="Expressions to values" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10502000" />
+    <option name="totallyTimeSpent" value="11912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1883" height="1027" extended-state="0" />
@@ -383,14 +388,14 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2919786" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2919786" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -422,7 +427,14 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
-              <option name="COLUMN_ORDER" />
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
@@ -564,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/expressions/ExpressionsDictionary.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/expressions/ValueDictionary.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -578,20 +583,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.test.ts">
+    <entry file="file://$PROJECT_DIR$/src/expressions/ExpressionsDictionary.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="390">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/expressions/Expressions.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
