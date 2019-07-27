@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91cd38fe-f26e-46ce-90d8-69d3ec720cec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/grid/Grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="140" lean-forward="true" selection-start-line="24" selection-start-column="123" selection-end-line="24" selection-end-column="140" />
+            <state relative-caret-position="240">
+              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -45,10 +42,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="90">
+                <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="14" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -62,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -106,12 +136,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" />
-        <option value="$PROJECT_DIR$/src/components/grid/Grid.tsx" />
-        <option value="$PROJECT_DIR$/src/components/grid/Grid.css" />
         <option value="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" />
         <option value="$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx" />
+        <option value="$PROJECT_DIR$/src/components/grid/Grid.tsx" />
+        <option value="$PROJECT_DIR$/src/components/grid/Grid.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -134,36 +164,6 @@
             <path>
               <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
               <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="grid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lean-excel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lean-excel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="inputBox" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -335,17 +335,11 @@
       <workItem from="1564003946592" duration="2030000" />
       <workItem from="1564171912542" duration="14232000" />
       <workItem from="1564238425787" duration="352000" />
-      <workItem from="1564238858682" duration="6050000" />
+      <workItem from="1564238858682" duration="6710000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 48m 17s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="initialize_grid - 2019.07.27 at 17h 48m 20s.xml">
-      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="update_cell_selected - 2019.07.27 at 17h 50m 29s.xml">
       <configuration name="update cell selected" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -370,9 +364,15 @@
     <history-entry file="display_expression - 2019.07.27 at 18h 31m 23s.xml">
       <configuration name="display expression" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="display_expression - 2019.07.27 at 18h 32m 27s.xml">
+      <configuration name="display expression" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="initialize_grid - 2019.07.27 at 18h 37m 22s.xml">
+      <configuration name="initialize grid" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6050000" />
+    <option name="totallyTimeSpent" value="6710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1883" height="1027" extended-state="0" />
@@ -383,10 +383,10 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2498642" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2498642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -394,7 +394,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5240642" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -496,24 +496,47 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.css">
+    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/leanExcel/LeanExcel.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="140" lean-forward="true" selection-start-line="24" selection-start-column="123" selection-end-line="24" selection-end-column="140" />
+        <state relative-caret-position="240">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -530,20 +553,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.tsx">
+    <entry file="file://$PROJECT_DIR$/src/components/grid/Grid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/inputBox/InputBox.test.tsx">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
         </state>
       </provider>
     </entry>
