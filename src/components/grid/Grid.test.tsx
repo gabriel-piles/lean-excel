@@ -11,30 +11,20 @@ it('initialize grid', () => {
 });
 
 it('update cell selected', () => {
-    let cellSelectedSpy = jest.fn();
-    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} setCellSelected={cellSelectedSpy} typingFormula={false}/>);
+    let cellPressedSpy = jest.fn();
+    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} setCellPressed={cellPressedSpy} typingFormula={false}/>);
 
     wrapper.findWhere(node => node.key() === 'Z50').simulate('click', {currentTarget: {id: 'Z50'}});
 
-    expect(cellSelectedSpy).toHaveBeenCalledWith('Z50');
+    expect(cellPressedSpy).toHaveBeenCalledWith('Z50');
 });
 
 it('highlight cell selected', () => {
-    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} setCellSelected={jest.fn()} typingFormula={false}/>);
-
-    expect(wrapper.findWhere(node => node.key() === 'A1').get(0).props.className).toContain('cell-selected');
-    expect(wrapper.findWhere(node => node.key() === 'Z50').get(0).props.className).not.toContain('cell-selected');
-
-    wrapper.findWhere(node => node.key() === 'Z50').simulate('click', {currentTarget: {id: 'Z50'}});
+    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}}
+                                  cellSelect={'Z50'}
+                                  setCellPressed={jest.fn()}
+                                  typingFormula={false}/>);
 
     expect(wrapper.findWhere(node => node.key() === 'A1').get(0).props.className).not.toContain('cell-selected');
     expect(wrapper.findWhere(node => node.key() === 'Z50').get(0).props.className).toContain('cell-selected');
-});
-
-it('not highlight other cell when typing formula', () => {
-    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} setCellSelected={jest.fn()} typingFormula={true}/>);
-
-    wrapper.findWhere(node => node.key() === 'Z50').simulate('click', {currentTarget: {id: 'Z50'}});
-
-    expect(wrapper.findWhere(node => node.key() === 'Z50').get(0).props.className).not.toContain('cell-selected');
 });

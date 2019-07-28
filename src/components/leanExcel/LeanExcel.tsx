@@ -11,7 +11,6 @@ interface LeanExcelProps {
 const LeanExcel: React.FC<LeanExcelProps> = (props) => {
     const {expressions} = props;
     const [cellSelected, setCellSelected] = useState<string>('A1');
-    const [typingFormula, setTypingFormula] = useState<boolean>(false);
     const [expression, setExpression] = useState<string>('');
     const [valuesDictionary, setValuesDictionary] = useState<ValuesDictionary>({});
 
@@ -22,10 +21,7 @@ const LeanExcel: React.FC<LeanExcelProps> = (props) => {
 
     const updateCellSelected = (cellSelected: string) => {
         setCellSelected(cellSelected);
-
-        if(!typingFormula){
-            setExpression(expressions.get(cellSelected));
-        }
+        setExpression(expressions.get(cellSelected));
     };
 
     return (
@@ -33,9 +29,8 @@ const LeanExcel: React.FC<LeanExcelProps> = (props) => {
             <InputBox
                 cellSelected={cellSelected}
                 expression={expression}
-                updateCellExpression={updateCellExpression}
-                setTypingFormula = {setTypingFormula}/>
-            <Grid setCellSelected = {updateCellSelected} typingFormula = {typingFormula} cellValues={valuesDictionary}/>
+                updateCellExpression={updateCellExpression}/>
+            <Grid setCellPressed={updateCellSelected}  cellValues={valuesDictionary} cellSelect={cellSelected}/>
         </div>
     );
 };
