@@ -35,6 +35,7 @@ export class InputBox extends Component<InputBoxProps> {
                         <input key={this.props.cellSelected} type="text" className="input-box"
                                defaultValue={this.props.expression}
                                onKeyPress={this.handleKeyDown}
+                               placeholder={`Use '=' to define a formula`}
                         />
                     </div>
                 </div>
