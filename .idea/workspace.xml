@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91cd38fe-f26e-46ce-90d8-69d3ec720cec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/expressions/key/Key.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/expressions/key/Key.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.ts" afterDir="false" />
@@ -55,9 +57,9 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/tests" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/LeanExcel" />
+      <recent name="$PROJECT_DIR$/src/components/leanExcel" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="$PROJECT_DIR$/src/expressions/ValueDictionary.ts" />
@@ -65,9 +67,10 @@
       <recent name="$PROJECT_DIR$/src/components/InputBox/InputBox.tsx" />
       <recent name="$PROJECT_DIR$/src/components/Grid/Grid.tsx" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/LeanExcel" />
-      <recent name="$PROJECT_DIR$/src/components/leanExcel" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/expressions/key" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -82,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Expressions to values.returns value from other key">
+  <component name="RunManager" selected="Jest.Expressions to values.sum function with ranges">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -96,20 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Expressions to values" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
-      <test-names>
-        <test-name value="Expressions to values" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Expressions to values.divide values" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Expressions to values.sum function with ranges" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -119,49 +109,56 @@
       <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
       <test-names>
         <test-name value="Expressions to values" />
-        <test-name value="divide values" />
+        <test-name value="sum function with ranges" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Expressions to values.returns #ERROR when the formula is not valid" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Expressions.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
+      <method v="2" />
+    </configuration>
+    <configuration name="column" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/expressions/key/Key.test.ts" />
       <test-names>
-        <test-name value="Expressions to values" />
-        <test-name value="returns #ERROR when the formula is not valid" />
+        <test-name value="column" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Expressions to values.returns value from other key" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="row number" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/expressions/key/Key.test.ts" />
       <test-names>
-        <test-name value="Expressions to values" />
-        <test-name value="returns value from other key" />
+        <test-name value="row number" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Expressions to values.substract values" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="valid key" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/expressions/key/Key.test.ts" />
       <test-names>
-        <test-name value="Expressions to values" />
-        <test-name value="substract values" />
+        <test-name value="valid key" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -176,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Expressions to values.returns value from other key" />
-        <item itemvalue="Jest.Expressions to values" />
-        <item itemvalue="Jest.Expressions to values.returns #ERROR when the formula is not valid" />
-        <item itemvalue="Jest.Expressions to values.substract values" />
-        <item itemvalue="Jest.Expressions to values.divide values" />
+        <item itemvalue="Jest.Expressions to values.sum function with ranges" />
+        <item itemvalue="Jest.Expressions.test.ts" />
+        <item itemvalue="Jest.column" />
+        <item itemvalue="Jest.row number" />
+        <item itemvalue="Jest.valid key" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +202,7 @@
       <workItem from="1564171912542" duration="14232000" />
       <workItem from="1564238425787" duration="352000" />
       <workItem from="1564238858682" duration="18638000" />
-      <workItem from="1564261206255" duration="7840000" />
+      <workItem from="1564261206255" duration="12711000" />
     </task>
     <servers />
   </component>
@@ -238,6 +235,18 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/expressions/key/Key.ts</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
