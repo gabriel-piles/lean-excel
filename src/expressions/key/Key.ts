@@ -22,6 +22,19 @@ class Key{
     getColumn(){
         return this.key[0];
     }
+
+    getRange(toKey: Key){
+        if(this.getColumn() !== toKey.getColumn()){
+            return [];
+        }
+
+        const range = [];
+        for (let rowNumber = this.getRowNumber(); rowNumber <= toKey.getRowNumber(); rowNumber++) {
+            range.push(this.getColumn() + rowNumber);
+        }
+
+        return range;
+    }
 }
 
 export {Key};

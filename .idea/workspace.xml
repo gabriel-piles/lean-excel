@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91cd38fe-f26e-46ce-90d8-69d3ec720cec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/expressions/key/Key.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expressions/key/Key.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/expressions/key/Key.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/key/Key.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/expressions/key/Key.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/key/Key.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Expressions to values.sum function with ranges">
+  <component name="RunManager" selected="Jest.SumFormula.test.ts">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -123,7 +125,17 @@
       <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
       <method v="2" />
     </configuration>
-    <configuration name="column" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="SumFormula.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.test.ts" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get range between keys " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -132,33 +144,20 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/expressions/key/Key.test.ts" />
       <test-names>
-        <test-name value="column" />
+        <test-name value="get range between keys " />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="row number" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="sum formula to operation" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/key/Key.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.test.ts" />
       <test-names>
-        <test-name value="row number" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="valid key" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/key/Key.test.ts" />
-      <test-names>
-        <test-name value="valid key" />
+        <test-name value="sum formula to operation" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -173,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.SumFormula.test.ts" />
+        <item itemvalue="Jest.get range between keys " />
+        <item itemvalue="Jest.sum formula to operation" />
         <item itemvalue="Jest.Expressions to values.sum function with ranges" />
         <item itemvalue="Jest.Expressions.test.ts" />
-        <item itemvalue="Jest.column" />
-        <item itemvalue="Jest.row number" />
-        <item itemvalue="Jest.valid key" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +201,7 @@
       <workItem from="1564171912542" duration="14232000" />
       <workItem from="1564238425787" duration="352000" />
       <workItem from="1564238858682" duration="18638000" />
-      <workItem from="1564261206255" duration="12711000" />
+      <workItem from="1564261206255" duration="15596000" />
     </task>
     <servers />
   </component>
@@ -235,18 +234,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/expressions/key/Key.ts</url>
-          <line>10</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

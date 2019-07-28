@@ -1,6 +1,5 @@
 import {Expressions} from './Expressions';
 
-
 const ERROR_MESSAGE = '#ERROR';
 
 it('get empty string when no value', () => {
