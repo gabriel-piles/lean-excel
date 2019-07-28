@@ -47,3 +47,19 @@ it('change cell value', () => {
 
     expect(wrapper.find('Grid').props().cellValues).toEqual({A2: '1_evaluated'});
 });
+
+it('move to next cell when cell updated', () => {
+    const wrapper = shallow(<LeanExcel expressions={new ExpressionsStub()}/>);
+    wrapper.find('InputBox').props().updateCellExpression('1');
+
+    expect(wrapper.find('Grid').props().cellSelect).toEqual('A2');
+});
+
+it('do not move to next cell when last row', () => {
+    const wrapper = shallow(<LeanExcel expressions={new ExpressionsStub()}/>);
+    wrapper.find('Grid').props().setCellPressed('A50');
+
+    wrapper.find('InputBox').props().updateCellExpression('1');
+
+    expect(wrapper.find('Grid').props().cellSelect).toEqual('A50');
+});

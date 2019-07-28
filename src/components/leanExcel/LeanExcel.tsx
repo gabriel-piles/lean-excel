@@ -3,6 +3,7 @@ import {InputBox} from '../inputBox/InputBox';
 import {Grid} from '../grid/Grid';
 import {Expressions} from '../../expressions/Expressions';
 import {ValuesDictionary} from "../../expressions/ValueDictionary";
+import {Key} from "../../expressions/key/Key";
 
 interface LeanExcelProps {
     expressions: Expressions
@@ -17,6 +18,16 @@ const LeanExcel: React.FC<LeanExcelProps> = (props) => {
     const updateCellExpression = (expression: string) => {
         expressions.set(cellSelected, expression);
         setValuesDictionary(expressions.toValues());
+        selectNextCell();
+    };
+
+    const selectNextCell = () => {
+        const cellUpdated = new Key(cellSelected);
+        const nextRow = cellUpdated.getRowNumber() === 50
+        ? 50
+        : cellUpdated.getRowNumber() + 1 ;
+
+        setCellSelected(cellUpdated.getColumn() + nextRow)
     };
 
     const updateCellSelected = (cellSelected: string) => {
