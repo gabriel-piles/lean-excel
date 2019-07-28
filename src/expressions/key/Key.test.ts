@@ -21,10 +21,12 @@ it('column', () => {
     expect(new Key('Z51').getColumn()).toEqual('Z');
 });
 
-it('get range between keys ', () => {
-    expect(new Key('A1').getRange(new Key('A3'))).toEqual(['A1', 'A2', 'A3']);
-    expect(new Key('A2').getRange(new Key('A5'))).toEqual(['A2', 'A3', 'A4', 'A5']);
-    expect(new Key('A1').getRange(new Key('A1'))).toEqual(['A1']);
-    expect(new Key('A2').getRange(new Key('A1'))).toEqual([]);
-    expect(new Key('A2').getRange(new Key('B3'))).toEqual([]);
+it('get range keys ', () => {
+    expect(Key.getRange('A1:A3')).toEqual(['A1', 'A2', 'A3']);
+    expect(Key.getRange('A2:A5')).toEqual(['A2', 'A3', 'A4', 'A5']);
+    expect(Key.getRange('A1:A1')).toEqual(['A1']);
+    expect(Key.getRange('A1:B3')).toEqual([]);
+    expect(Key.getRange('A3:A1')).toEqual([]);
 });
+
+

@@ -2,20 +2,23 @@ import _ from "lodash";
 import {ExpressionsDictionary} from "./ExpressionsDictionary";
 import {ValuesDictionary} from "./ValueDictionary";
 import {Key} from "./key/Key";
-import {SumFormula} from "./sumFormula/SumFormula";
+import {SumFormulaParser} from "./sumFormulaParser/SumFormulaParser";
+import {AvgFormulaParser} from "./avgFormulaParser/AvgFormulaParser";
 
 
 const FORMULA = /^=/;
 const VOID_STRING = /^\s*$/;
 const KEY = /[A-Z][0-9]{1,2}/;
 const SUM = /(SUM\()(.*)(\))/;
+const AVG = /(AVG\()(.*)(\))/;
 const ERROR_MESSAGE = '#ERROR';
 
 class Expressions {
     readonly REGEX_TO_ACTION = [
-        {regExpression: VOID_STRING, action: () => '0'},
-        {regExpression: SUM, action: (formula: string) => this.evaluateFormula(new SumFormula(formula).toOperation())},
-        {regExpression: KEY, action: (formula: string) => this.replaceKeyPerValue(formula, this.expressionsDictionary)},
+        {regularExpression: VOID_STRING, action: () => '0'},
+        {regularExpression: SUM, action: (formula: string) => this.evaluateFormula(new SumFormulaParser(formula).toOperation())},
+        {regularExpression: AVG, action: (formula: string) => this.evaluateFormula(new AvgFormulaParser(formula).toOperation())},
+        {regularExpression: KEY, action: (formula: string) => this.replaceKeyPerValue(formula, this.expressionsDictionary)},
     ];
 
     private expressionsDictionary: ExpressionsDictionary = {};
@@ -38,6 +41,29 @@ class Expressions {
         return valuesDictionary;
     }
     
+    private evaluateExpression(expression: string): string {
+        if (!FORMULA.exec(expression)) {
+            return expression;
+        }
+
+        const formula = expression.replace('=', '');
+        return this.evaluateFormula(formula);
+    }
+
+    private evaluateFormula(formula: string): string {
+        try {
+            const regExpressionFulfilled = this.REGEX_TO_ACTION.find(x => x.regularExpression.exec(formula));
+
+            if (regExpressionFulfilled) {
+                return regExpressionFulfilled.action(formula);
+            }
+
+            return eval(formula).toString();
+        } catch (e) {
+            return ERROR_MESSAGE;
+        }
+    }
+
     private replaceKeyPerValue(formula: string, expressionsDictionary: ExpressionsDictionary) {
         const match = KEY.exec(formula);
 
@@ -52,29 +78,6 @@ class Expressions {
             : '0';
 
         return this.evaluateFormula(formula.replace(key, value));
-    }
-
-    private evaluateExpression(expression: string): string {
-        if (!FORMULA.exec(expression)) {
-            return expression;
-        }
-
-        const formula = expression.replace('=', '');
-        return this.evaluateFormula(formula);
-    }
-
-    private evaluateFormula(formula: string): string {
-        try {
-            const regExpressionFulfilled = this.REGEX_TO_ACTION.find(x => x.regExpression.exec(formula));
-
-            if (regExpressionFulfilled) {
-                return regExpressionFulfilled.action(formula);
-            }
-
-            return eval(formula).toString();
-        } catch (e) {
-            return ERROR_MESSAGE;
-        }
     }
 }
 

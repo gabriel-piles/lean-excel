@@ -23,7 +23,7 @@ class Key{
         return this.key[0];
     }
 
-    getRange(toKey: Key){
+    private getRange(toKey: Key){
         if(this.getColumn() !== toKey.getColumn()){
             return [];
         }
@@ -34,6 +34,14 @@ class Key{
         }
 
         return range;
+    }
+
+    static getRange(rangeString: string): Array<string>{
+        const keys = rangeString.split(':');
+        const keyFrom = new Key(keys[0]);
+        const keyTo = new Key(keys[1]);
+
+        return  keyFrom.getRange(keyTo);
     }
 }
 

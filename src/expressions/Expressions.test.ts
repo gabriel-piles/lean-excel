@@ -109,10 +109,44 @@ describe('Expressions to values', () => {
         expressions.set('A8', '=SUM(A1:A1)');
 
         expect(expressions.toValues().A4).toEqual( '6');
-        expect(expressions.toValues().A4).toEqual( '6');
         expect(expressions.toValues().A5).toEqual( ERROR_MESSAGE);
         expect(expressions.toValues().A6).toEqual( ERROR_MESSAGE);
         expect(expressions.toValues().A7).toEqual( ERROR_MESSAGE);
         expect(expressions.toValues().A8).toEqual( '1');
+    });
+
+    it('avg function', () => {
+        const expressions = new Expressions();
+
+        expressions.set('A1', '1');
+        expressions.set('A2', '2');
+        expressions.set('A3', '3');
+        expressions.set('A4', '=AVG(A1,A2,A3)');
+        expressions.set('A5', '=AVG(A1,-1)');
+        expressions.set('A6', '=AVG(A1) * 2');
+
+        expect(expressions.toValues().A4).toEqual( '2');
+        expect(expressions.toValues().A5).toEqual( '0');
+        expect(expressions.toValues().A6).toEqual( '2');
+    });
+
+    it('avg function with ranges', () => {
+        const expressions = new Expressions();
+
+        expressions.set('A1', '1');
+        expressions.set('A2', '2');
+        expressions.set('A3', '3');
+        expressions.set('A4', '=AVG(A1:A3)');
+        expressions.set('A5', '=AVG(A50:A55)');
+        expressions.set('A6', '=AVG(A50:A49)');
+        expressions.set('A7', '=AVG(A1:B2)');
+        expressions.set('A8', '=AVG(A1:A1)');
+
+        expect(expressions.toValues().A4).toEqual( '2');
+        expect(expressions.toValues().A5).toEqual( ERROR_MESSAGE);
+        expect(expressions.toValues().A6).toEqual( ERROR_MESSAGE);
+        expect(expressions.toValues().A7).toEqual( ERROR_MESSAGE);
+        expect(expressions.toValues().A8).toEqual( '1');
+
     });
 });

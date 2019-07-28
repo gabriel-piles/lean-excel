@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91cd38fe-f26e-46ce-90d8-69d3ec720cec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/expressions/avgFormulaParser/AvgFormulaParser.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/expressions/avgFormulaParser/AvgFormulaParser.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/expressions/sumFormulaParser/SumFormulaParser.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/key/Key.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/key/Key.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/expressions/key/Key.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/key/Key.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/sumFormulaParser/SumFormulaParser.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +44,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/expressions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -60,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/expressions" />
       <recent name="$PROJECT_DIR$/src/components/LeanExcel" />
       <recent name="$PROJECT_DIR$/src/components/leanExcel" />
     </key>
@@ -87,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.SumFormula.test.ts">
+  <component name="RunManager" selected="Jest.SumFormulaParser.test.ts">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -101,7 +105,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Expressions to values.sum function with ranges" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="AvgFormulaParser.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/expressions/avgFormulaParser/AvgFormulaParser.test.ts" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Expressions to values" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
+      <test-names>
+        <test-name value="Expressions to values" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Expressions to values.avg function with ranges" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -111,53 +138,30 @@
       <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
       <test-names>
         <test-name value="Expressions to values" />
-        <test-name value="sum function with ranges" />
+        <test-name value="avg function with ranges" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Expressions.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="SumFormulaParser.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/expressions/Expressions.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/expressions/sumFormulaParser/SumFormulaParser.test.ts" />
       <method v="2" />
     </configuration>
-    <configuration name="SumFormula.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.test.ts" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get range between keys " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="avg function should fail" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/key/Key.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/expressions/avgFormulaParser/AvgFormulaParser.test.ts" />
       <test-names>
-        <test-name value="get range between keys " />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="sum formula to operation" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.test.ts" />
-      <test-names>
-        <test-name value="sum formula to operation" />
+        <test-name value="avg function should fail" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -172,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.SumFormula.test.ts" />
-        <item itemvalue="Jest.get range between keys " />
-        <item itemvalue="Jest.sum formula to operation" />
-        <item itemvalue="Jest.Expressions to values.sum function with ranges" />
-        <item itemvalue="Jest.Expressions.test.ts" />
+        <item itemvalue="Jest.SumFormulaParser.test.ts" />
+        <item itemvalue="Jest.Expressions to values" />
+        <item itemvalue="Jest.Expressions to values.avg function with ranges" />
+        <item itemvalue="Jest.AvgFormulaParser.test.ts" />
+        <item itemvalue="Jest.avg function should fail" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +205,7 @@
       <workItem from="1564171912542" duration="14232000" />
       <workItem from="1564238425787" duration="352000" />
       <workItem from="1564238858682" duration="18638000" />
-      <workItem from="1564261206255" duration="15596000" />
+      <workItem from="1564261206255" duration="22976000" />
     </task>
     <servers />
   </component>
@@ -234,6 +238,18 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/expressions/avgFormulaParser/AvgFormulaParser.ts</url>
+          <line>23</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
