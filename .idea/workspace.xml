@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91cd38fe-f26e-46ce-90d8-69d3ec720cec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inputBox/InputBox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputBox/InputBox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +197,7 @@
       <workItem from="1564171912542" duration="14232000" />
       <workItem from="1564238425787" duration="352000" />
       <workItem from="1564238858682" duration="18638000" />
-      <workItem from="1564261206255" duration="34063000" />
+      <workItem from="1564261206255" duration="34310000" />
     </task>
     <servers />
   </component>
