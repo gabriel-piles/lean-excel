@@ -3,24 +3,17 @@ import {ExpressionsDictionary} from "./ExpressionsDictionary";
 import {ValuesDictionary} from "./ValueDictionary";
 
 
+const FORMULA = /^=/;
 const VOID_STRING = /^\s*$/;
-const CELL_KEY = /^[A-Z]{1}[0-9]{1}/;
-const NUMBER = /^\d+$/;
-const DECIMAL = /^\d*\.\d+/;
-const DIVIDED = /(.*)\/(.*)/;
-const SUM = /(.*)\+(.*)/;
-const SUBSTRACTION = /(.*)-(.*)/;
+const KEY = /[A-Z][0-9]{1,2}/;
 
 class Expressions {
     readonly REGEX_TO_ACTION = [
         {regularExpression: VOID_STRING, action: () => '0'},
-        {regularExpression: NUMBER, action: (formula:string) => formula},
-        {regularExpression: DECIMAL, action: (formula:string) => formula},
-        {regularExpression: CELL_KEY, action: (formula:string) => this.replaceCellPerValue(formula, this.expressionsDictionary)},
-        {regularExpression: DIVIDED, action: (formula:string) => this.operateTwoFormulas(formula, DIVIDED, (x,y) => x / y)},
-        {regularExpression: SUM, action: (formula:string) => this.operateTwoFormulas(formula, SUM, (x,y) => x + y)},
-        {regularExpression: SUBSTRACTION, action: (formula:string) => this.operateTwoFormulas(formula, SUBSTRACTION, (x,y) => x - y)},
+        {regularExpression: KEY, action: (formula: string) => this.replaceKeyPerValue(formula, this.expressionsDictionary)},
     ];
+
+    readonly ERROR_MESSAGE = '#ERROR';
 
     private expressionsDictionary: ExpressionsDictionary = {};
 
@@ -38,39 +31,47 @@ class Expressions {
         return valuesDictionary;
     }
 
-    private replaceCellPerValue(key:string, expressionsDictionary: ExpressionsDictionary){
-        return this.evaluateExpression(expressionsDictionary[key])
-    }
+    private replaceKeyPerValue(formula: string, expressionsDictionary: ExpressionsDictionary) {
+        const match = KEY.exec(formula);
 
-    private operateTwoFormulas(formula:string, regularExpression: RegExp, operator:(x:number, y:number)=>number){
-        const twoParts = formula.match(regularExpression);
-        if(!twoParts){
-            return '#ERROR';
+        if(!match || !this.validKey(match[0])) {
+            return this.ERROR_MESSAGE;
         }
 
-        let firstPart = parseFloat(this.evaluateFormula(twoParts[1]));
-        let secondPart = parseFloat(this.evaluateFormula(twoParts[2]));
-        return (operator(firstPart, secondPart )).toString();
+        const key = match[0];
+
+        const value = expressionsDictionary[key] ?
+            this.evaluateExpression(expressionsDictionary[key])
+            : '0';
+
+        return this.evaluateFormula(formula.replace(key, value));
+    }
+
+    private validKey(key:string) {
+        return eval(key.substring(1)) <= 50;
     }
 
     private evaluateExpression(expression: string): string {
-        if (/^=/.exec(expression)) {
-            let formula = expression.replace('=', '');
-            formula = formula.replace(/ /g, '');
-            return this.evaluateFormula(formula);
+        if (!FORMULA.exec(expression)) {
+            return expression;
         }
 
-        return expression;
+        const formula = expression.replace('=', '');
+        return this.evaluateFormula(formula);
     }
 
-    private evaluateFormula(formula: string) : string {
-        const regularExpressionFulfilled = this.REGEX_TO_ACTION.find(x => x.regularExpression.exec(formula));
+    private evaluateFormula(formula: string): string {
+        try {
+            const regularExpressionFulfilled = this.REGEX_TO_ACTION.find(x => x.regularExpression.exec(formula));
 
-        if(!regularExpressionFulfilled){
-            return '#ERROR';
+            if (regularExpressionFulfilled) {
+                return regularExpressionFulfilled.action(formula);
+            }
+
+            return eval(formula).toString();
+        } catch (e) {
+            return this.ERROR_MESSAGE;
         }
-
-        return regularExpressionFulfilled.action(formula);
     }
 
     get(key: string): string {
