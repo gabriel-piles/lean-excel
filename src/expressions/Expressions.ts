@@ -1,10 +1,9 @@
-import _ from "lodash";
-import {ExpressionsDictionary} from "./ExpressionsDictionary";
-import {ValuesDictionary} from "./ValueDictionary";
-import {Key} from "./key/Key";
-import {SumFormulaParser} from "./sumFormulaParser/SumFormulaParser";
-import {AvgFormulaParser} from "./avgFormulaParser/AvgFormulaParser";
-
+import _ from 'lodash';
+import {ExpressionsDictionary} from './ExpressionsDictionary';
+import {ValuesDictionary} from './ValueDictionary';
+import {Key} from './key/Key';
+import {SumFormulaParser} from './sumFormulaParser/SumFormulaParser';
+import {AvgFormulaParser} from './avgFormulaParser/AvgFormulaParser';
 
 const FORMULA = /^=/;
 const VOID_STRING = /^\s*$/;

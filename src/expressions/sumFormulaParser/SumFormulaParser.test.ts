@@ -1,4 +1,4 @@
-import {SumFormulaParser} from "./SumFormulaParser";
+import {SumFormulaParser} from './SumFormulaParser';
 
 it('sum formula to operation', () => {
     expect(new SumFormulaParser('SUM(A1,A2,A3)').toOperation()).toEqual( 'A1+A2+A3');

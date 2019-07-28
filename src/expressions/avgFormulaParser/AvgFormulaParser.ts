@@ -1,4 +1,4 @@
-import {Key} from "../key/Key";
+import {Key} from '../key/Key';
 
 const AVG = /(AVG\()(.*)(\))/;
 
