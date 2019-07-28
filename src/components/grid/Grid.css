@@ -11,3 +11,7 @@ table {
     overflow:auto;
     cursor: pointer;
 }
+
+.cell-selected {
+    background-color: #c7f1ff;
+}

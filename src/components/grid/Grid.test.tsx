@@ -18,3 +18,15 @@ it('update cell selected', () => {
 
     expect(cellSelectedSpy).toHaveBeenCalledWith('Z50');
 });
+
+it('highlight cell selected', () => {
+    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} setCellSelected={jest.fn()}/>);
+
+    expect(wrapper.findWhere(node => node.key() === 'A1').get(0).props.className).toContain('cell-selected');
+    expect(wrapper.findWhere(node => node.key() === 'Z50').get(0).props.className).not.toContain('cell-selected');
+
+    wrapper.findWhere(node => node.key() === 'Z50').simulate('click', {currentTarget: {id: 'Z50'}});
+
+    expect(wrapper.findWhere(node => node.key() === 'A1').get(0).props.className).not.toContain('cell-selected');
+    expect(wrapper.findWhere(node => node.key() === 'Z50').get(0).props.className).toContain('cell-selected');
+});

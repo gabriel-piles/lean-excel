@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91cd38fe-f26e-46ce-90d8-69d3ec720cec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/expressions/avgFormulaParser/AvgFormulaParser.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expressions/avgFormulaParser/AvgFormulaParser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expressions/sumFormulaParser/SumFormulaParser.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/Expressions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/Expressions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/key/Key.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/key/Key.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/key/Key.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/key/Key.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/expressions/sumFormula/SumFormula.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/sumFormulaParser/SumFormulaParser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/grid/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/grid/Grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/expressions/sumFormulaParser/SumFormulaParser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/expressions/sumFormulaParser/SumFormulaParser.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.SumFormulaParser.test.ts">
+  <component name="RunManager" selected="Jest.highlight cell selected">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -152,16 +147,16 @@
       <test-file value="$PROJECT_DIR$/src/expressions/sumFormulaParser/SumFormulaParser.test.ts" />
       <method v="2" />
     </configuration>
-    <configuration name="avg function should fail" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="highlight cell selected" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/expressions/avgFormulaParser/AvgFormulaParser.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/components/grid/Grid.test.tsx" />
       <test-names>
-        <test-name value="avg function should fail" />
+        <test-name value="highlight cell selected" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -176,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.highlight cell selected" />
         <item itemvalue="Jest.SumFormulaParser.test.ts" />
         <item itemvalue="Jest.Expressions to values" />
         <item itemvalue="Jest.Expressions to values.avg function with ranges" />
         <item itemvalue="Jest.AvgFormulaParser.test.ts" />
-        <item itemvalue="Jest.avg function should fail" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +200,7 @@
       <workItem from="1564171912542" duration="14232000" />
       <workItem from="1564238425787" duration="352000" />
       <workItem from="1564238858682" duration="18638000" />
-      <workItem from="1564261206255" duration="22976000" />
+      <workItem from="1564261206255" duration="24196000" />
     </task>
     <servers />
   </component>

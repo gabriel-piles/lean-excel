@@ -18,7 +18,7 @@ class SumFormulaParser{
 
         const operation = match[2].includes(':')
             ? this.operationFromRange(match[2])
-            : match[2].replace(/\,/g, '+');
+            : match[2].replace(/,/g, '+');
 
         const sumFormula = match[0];
         return this.formula.replace(sumFormula, operation);

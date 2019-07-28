@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import _ from "lodash";
 import './Grid.css';
 import {ValuesDictionary} from "../../expressions/ValueDictionary";
@@ -12,7 +12,10 @@ interface GridProps {
 }
 
 export const Grid: React.FC<GridProps> = (props) => {
+    const [cellSelected, setCellSelected] = useState<string>('A1');
+
     const updateCellSelected = (cellSelected:string) => {
+        setCellSelected(cellSelected);
         props.setCellSelected(cellSelected);
     };
 
@@ -22,7 +25,10 @@ export const Grid: React.FC<GridProps> = (props) => {
             {_.times(ROW_NUMBER,(row_index) => <tr key={`row${row_index}`} className={'row'}>
                 {COLUMN_NAMES.map((column_name) => {
                     const cellId = column_name + (row_index+1);
-                    return <td key={cellId} id={cellId} className={`column ${cellId}`} onClick={(e) => updateCellSelected(e.currentTarget.id)}>
+                    return <td key={cellId}
+                               id={cellId}
+                               className={`column ${cellId} ${cellSelected === cellId ? 'cell-selected' : ''}` }
+                               onClick={(e) => updateCellSelected(e.currentTarget.id)}>
                         {props.cellValues[cellId] ? props.cellValues[cellId] : ''}
                     </td>
                 })}
