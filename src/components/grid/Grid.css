@@ -1,15 +1,25 @@
-.column{
-    min-width: 200px;
-    height: 20px;
-    border: 2px solid #999;
+.grid {
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
+    z-index: 0;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
-table {
+.grid table {
     border-collapse: collapse;
     border-spacing: 0;
     table-layout: fixed;
     overflow:auto;
     cursor: pointer;
+    z-index: 0;
+}
+
+.column{
+    min-width: 200px;
+    height: 20px;
+    border: 2px solid #999;
 }
 
 .cell-selected {

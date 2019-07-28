@@ -1,0 +1,16 @@
+.input-section{
+    width: 100%;
+    background-color: #e8e8e8;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+}
+
+.input-container{
+    width: 90%;
+    margin: 5px auto 5px 30px;
+}
+.input-container .input{
+    width: 100%;
+}
+
