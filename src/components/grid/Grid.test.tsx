@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import {Grid} from "./Grid";
 
 it('initialize grid', () => {
-    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} cellSelect={'Z50'} setCellPressed={jest.fn} />);
+    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} cellSelected={'Z50'} setCellPressed={jest.fn} />);
     expect(wrapper.find('.row').length).toEqual(50);
     expect(wrapper.find('.column').length).toEqual(26*50);
     expect(wrapper.findWhere(node => node.key() === 'A1').get(0).props.className).toContain('A1');
@@ -12,7 +12,7 @@ it('initialize grid', () => {
 
 it('update cell selected', () => {
     let cellPressedSpy = jest.fn();
-    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} cellSelect={'Z50'} setCellPressed={cellPressedSpy} />);
+    const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}} cellSelected={'Z50'} setCellPressed={cellPressedSpy} />);
 
     wrapper.findWhere(node => node.key() === 'Z50').simulate('click', {currentTarget: {id: 'Z50'}});
 
@@ -21,7 +21,7 @@ it('update cell selected', () => {
 
 it('highlight cell selected', () => {
     const wrapper = shallow(<Grid cellValues={{A1: 'A1 value'}}
-                                  cellSelect={'Z50'}
+                                  cellSelected={'Z50'}
                                   setCellPressed={jest.fn()}/>);
 
     expect(wrapper.findWhere(node => node.key() === 'A1').get(0).props.className).not.toContain('cell-selected');

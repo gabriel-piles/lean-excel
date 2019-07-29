@@ -8,7 +8,7 @@ const ROW_NUMBER = 50;
 
 interface GridProps {
     cellValues: ValuesDictionary;
-    cellSelect: string;
+    cellSelected: string;
     setCellPressed(cellSelected: string): any;
 }
 
@@ -23,12 +23,12 @@ export const Grid: React.FC<GridProps> = (props) => {
                 <tbody>
                 {_.times(ROW_NUMBER, (row_index) => <tr key={`row${row_index}`} className={'row'}>
                     {COLUMN_NAMES.map((column_name) => {
-                        const cellId = column_name + (row_index + 1);
-                        return <td key={cellId}
-                                   id={cellId}
-                                   className={`column ${cellId} ${props.cellSelect === cellId ? 'cell-selected' : ''}`}
+                        const cellKey = column_name + (row_index + 1);
+                        return <td key={cellKey}
+                                   id={cellKey}
+                                   className={`column ${cellKey} ${props.cellSelected === cellKey ? 'cell-selected' : ''}`}
                                    onClick={(e) => updateCellSelected(e.currentTarget.id)}>
-                            {props.cellValues[cellId] ? props.cellValues[cellId] : ''}
+                            {props.cellValues[cellKey] ? props.cellValues[cellKey] : ''}
                         </td>
                     })}
                 </tr>)}

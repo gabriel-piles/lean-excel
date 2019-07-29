@@ -1,4 +1,4 @@
-class Key{
+class CellKey{
     private key:string;
     readonly rowNumber: number;
 
@@ -23,7 +23,7 @@ class Key{
         return this.key[0];
     }
 
-    private getRange(toKey: Key){
+    private getRange(toKey: CellKey){
         if(this.getColumn() !== toKey.getColumn()){
             return [];
         }
@@ -36,13 +36,22 @@ class Key{
         return range;
     }
 
+    public getNextKey() {
+        const nextRow = this.getRowNumber() === 50
+            ? 50
+            : this.getRowNumber() + 1 ;
+
+        return this.getColumn() + nextRow;
+    }
+
     static getRange(rangeString: string): Array<string>{
         const keys = rangeString.split(':');
-        const keyFrom = new Key(keys[0]);
-        const keyTo = new Key(keys[1]);
+        const keyFrom = new CellKey(keys[0]);
+        const keyTo = new CellKey(keys[1]);
 
         return  keyFrom.getRange(keyTo);
     }
+
 }
 
-export {Key};
+export {CellKey};

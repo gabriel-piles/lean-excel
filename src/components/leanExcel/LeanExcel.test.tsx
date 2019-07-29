@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 import {LeanExcel} from './LeanExcel';
 import {Expressions} from '../../expressions/Expressions';
 import _ from 'lodash';
-import {ExpressionsDictionary} from "../../expressions/ExpressionsDictionary";
-import {ValuesDictionary} from "../../expressions/ValueDictionary";
+import {ExpressionsDictionary} from '../../expressions/ExpressionsDictionary';
+import {ValuesDictionary} from '../../expressions/ValueDictionary';
 
 class ExpressionsStub extends Expressions{
     private cellExpressions: ExpressionsDictionary = {};
@@ -37,7 +37,7 @@ it('update cell selected when cell pressed', () => {
     const wrapper = shallow(<LeanExcel expressions={new ExpressionsStub()}/>);
     wrapper.find('Grid').props().setCellPressed('A2');
 
-    expect(wrapper.find('Grid').props().cellSelect).toEqual('A2');
+    expect(wrapper.find('Grid').props().cellSelected).toEqual('A2');
 });
 
 it('change cell value', () => {
@@ -52,14 +52,5 @@ it('move to next cell when cell updated', () => {
     const wrapper = shallow(<LeanExcel expressions={new ExpressionsStub()}/>);
     wrapper.find('InputBox').props().updateCellExpression('1');
 
-    expect(wrapper.find('Grid').props().cellSelect).toEqual('A2');
-});
-
-it('do not move to next cell when last row', () => {
-    const wrapper = shallow(<LeanExcel expressions={new ExpressionsStub()}/>);
-    wrapper.find('Grid').props().setCellPressed('A50');
-
-    wrapper.find('InputBox').props().updateCellExpression('1');
-
-    expect(wrapper.find('Grid').props().cellSelect).toEqual('A50');
+    expect(wrapper.find('Grid').props().cellSelected).toEqual('A2');
 });

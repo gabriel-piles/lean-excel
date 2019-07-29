@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import {ExpressionsDictionary} from './ExpressionsDictionary';
 import {ValuesDictionary} from './ValueDictionary';
-import {Key} from './key/Key';
+import {CellKey} from './cellKey/CellKey';
 import {SumFormulaParser} from './sumFormulaParser/SumFormulaParser';
 import {AvgFormulaParser} from './avgFormulaParser/AvgFormulaParser';
 
@@ -66,7 +66,7 @@ class Expressions {
     private replaceKeyPerValue(formula: string, expressionsDictionary: ExpressionsDictionary) {
         const match = KEY.exec(formula);
 
-        if (!match || !new Key(match[0]).valid()) {
+        if (!match || !new CellKey(match[0]).valid()) {
             return ERROR_MESSAGE;
         }
 

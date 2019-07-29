@@ -1,4 +1,4 @@
-import {Key} from '../key/Key';
+import {CellKey} from '../cellKey/CellKey';
 
 const AVG = /(AVG\()(.*)(\))/;
 
@@ -39,7 +39,7 @@ class AvgFormulaParser {
     }
 
     private operationFromRange(rangeString: string): string {
-        const keyRange = Key.getRange(rangeString);
+        const keyRange = CellKey.getRange(rangeString);
         if (!keyRange || !keyRange.length) {
             throw new Error('Invalid avg formula');
         }
