@@ -2,21 +2,22 @@ import _ from 'lodash';
 import {ExpressionsDictionary} from './ExpressionsDictionary';
 import {ValuesDictionary} from './ValueDictionary';
 import {CellKey} from './cellKey/CellKey';
-import {SumFormula} from './sumFormula/SumFormula';
-import {AvgFormula} from './avgFormula/AvgFormula';
+import {AvgOperator} from './formula/avgOperator/AvgOperator';
+import {FormulaParser} from './formula/Formula';
+import {SumOperator} from './formula/sumOperator/SumOperator';
 
 const FORMULA = /^=/;
 const VOID_STRING = /^\s*$/;
 const KEY = /[A-Z][0-9]{1,2}/;
-const SUM = /(SUM\()(.*)(\))/;
-const AVG = /(AVG\()(.*)(\))/;
+const SUM = /((SUM\()([^\)]+)\))/;
+const AVG = /((AVG\()([^\)]+)\))/;
 const ERROR_MESSAGE = '#ERROR';
 
 class Expressions {
     readonly REGEX_TO_ACTION = [
         {regularExpression: VOID_STRING, action: () => '0'},
-        {regularExpression: SUM, action: (formula: string) => this.evaluateFormula(new SumFormula(formula).toExtendedExpression())},
-        {regularExpression: AVG, action: (formula: string) => this.evaluateFormula(new AvgFormula(formula).toExtendedExpression())},
+        {regularExpression: SUM, action: (formula: string) => this.evaluateFormula(new FormulaParser(formula, new SumOperator()).toExtendedExpression())},
+        {regularExpression: AVG, action: (formula: string) => this.evaluateFormula(new FormulaParser(formula, new AvgOperator()).toExtendedExpression())},
         {regularExpression: KEY, action: (formula: string) => this.replaceKeyPerValue(formula, this.expressionsDictionary)},
     ];
 
