@@ -1,10 +1,6 @@
 ## Lean excel
 
-You can see the project running here:
-
-https://lean-excel.web.app/
-
-### `Tech stack`
+Basic excel application built in few days with the following stack:
 
 React 16.8
 
@@ -14,6 +10,9 @@ Enzyme 3.10
 
 Cypress 3.4
 
+You can see the project running here:
+
+https://lean-excel.web.app/
 
 In the project directory, you can run:
 
