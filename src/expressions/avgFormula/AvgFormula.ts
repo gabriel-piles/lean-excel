@@ -1,31 +1,33 @@
 import {CellKey} from '../cellKey/CellKey';
 
-const AVG = /(AVG\()(.*)(\))/;
+const AVG = /((AVG\()([^\)]+)\))/;
 
-class AvgFormulaParser {
+class AvgFormula {
     readonly formula: string;
 
     constructor(formula: string) {
         this.formula = formula.replace(/\s/g, '');
     }
 
-    public toOperation(): string {
+    public toExtendedExpression(): string {
         const match = AVG.exec(this.formula);
 
         if (!match) {
             throw new Error('Invalid avg formula');
         }
 
-        const extendedKeys = match[2].includes(':')
-            ? this.operationFromRange(match[2])
-            : match[2];
+        let avgFormulaInput = match[3];
+        const extendedKeys = avgFormulaInput.includes(':')
+            ? this.operationFromRange(avgFormulaInput)
+            : avgFormulaInput;
 
-        const avgOperation = this.getAvgOperation(extendedKeys);
+        let extendedExpression = this.getAvgOperation(extendedKeys);
+        extendedExpression = '(' + extendedExpression + ')';
         const sumFormula = match[0];
-        return this.formula.replace(sumFormula, avgOperation);
+        return this.formula.replace(sumFormula, extendedExpression);
     }
 
-    // Transform from A1,A2 to A1/2 + A2/2
+    // Transform from A1,A2 to (A1/2 + A2/2)
     private getAvgOperation(extendedKeys: string) {
         let commaMatches = extendedKeys.match(/,/g);
 
@@ -48,4 +50,4 @@ class AvgFormulaParser {
     }
 }
 
-export {AvgFormulaParser};
+export {AvgFormula};

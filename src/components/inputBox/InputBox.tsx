@@ -32,7 +32,9 @@ export class InputBox extends Component<InputBoxProps> {
                 <div className={'input-container'}>
                     <div className="ui labeled input">
                         <div className="ui label label">{this.props.cellSelected}</div>
-                        <input key={this.props.cellSelected} type="text" className="input-box"
+                        <input key={this.props.cellSelected} type="text"
+                               autoFocus
+                               className="input-box"
                                defaultValue={this.props.expression}
                                onKeyPress={this.handleKeyDown}
                                placeholder={`Use '=' to define a formula`}

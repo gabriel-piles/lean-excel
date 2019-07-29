@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress": "react-scripts start & cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@types/enzyme": "^3.10.3"
+    "@types/enzyme": "^3.10.3",
+    "cypress": "^3.4.0"
   }
 }

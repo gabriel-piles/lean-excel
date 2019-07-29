@@ -7,7 +7,7 @@ it('get empty string when no value', () => {
     expect(expressions.get('key')).toEqual('');
 });
 
-it('add expressions to expressions', () => {
+it('add expression to expressions', () => {
     const expressions = new Expressions();
 
     expressions.set('A1', 'value1');
@@ -148,5 +148,16 @@ describe('Expressions to values', () => {
         expect(expressions.toValues().A7).toEqual( ERROR_MESSAGE);
         expect(expressions.toValues().A8).toEqual( '1');
 
+    });
+
+    it('solves complex formula', () => {
+        const expressions = new Expressions();
+
+        expressions.set('A1', '=SUM(B1:B3) * AVG(B1:B3) + 10');
+        expressions.set('B1', '1');
+        expressions.set('B2', '2');
+        expressions.set('B3', '3');
+
+        expect(expressions.toValues().A1).toEqual( '22');
     });
 });

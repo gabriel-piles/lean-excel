@@ -23,7 +23,7 @@ const LeanExcel: React.FC<LeanExcelProps> = (props) => {
 
     const selectNextCell = () => {
         const cellKey = new CellKey(cellSelected);
-        setCellSelected(cellKey.getNextKey());
+        updateCellSelected(cellKey.getNextKey());
     };
 
     const updateCellSelected = (cellSelected: string) => {

@@ -1,27 +1,30 @@
 import {CellKey} from '../cellKey/CellKey';
 
-const SUM = /(SUM\()(.*)(\))/;
+const SUM = /((SUM\()([^\)]+)\))/;
 
-class SumFormulaParser{
+class SumFormula{
     readonly formula:string;
 
     constructor(formula:string){
         this.formula = formula.replace(/\s/g, '');
     }
 
-    public toOperation():string {
+    public toExtendedExpression():string {
         const match = SUM.exec(this.formula);
 
         if (!match) {
             throw new Error('Invalid sum formula');
         }
 
-        const operation = match[2].includes(':')
-            ? this.operationFromRange(match[2])
-            : match[2].replace(/,/g, '+');
+        let sumFormulaInput = match[3];
+        let extendedExpression = sumFormulaInput.includes(':')
+            ? this.operationFromRange(sumFormulaInput)
+            : sumFormulaInput.replace(/,/g, '+');
+
+        extendedExpression = '(' + extendedExpression + ')';
 
         const sumFormula = match[0];
-        return this.formula.replace(sumFormula, operation);
+        return this.formula.replace(sumFormula, extendedExpression);
     }
 
     private operationFromRange(rangeString:string):string{
@@ -34,4 +37,4 @@ class SumFormulaParser{
     }
 }
 
-export {SumFormulaParser};
+export {SumFormula};
