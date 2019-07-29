@@ -5,20 +5,17 @@ import {CellKey} from './cellKey/CellKey';
 import {AvgOperator} from './formula/avgOperator/AvgOperator';
 import {FormulaParser} from './formula/Formula';
 import {SumOperator} from './formula/sumOperator/SumOperator';
+import {RegExpEnum} from './RegExpEnum';
 
-const FORMULA = /^=/;
-const VOID_STRING = /^\s*$/;
-const KEY = /[A-Z][0-9]{1,2}/;
-const SUM = /((SUM\()([^\)]+)\))/;
-const AVG = /((AVG\()([^\)]+)\))/;
-const ERROR_MESSAGE = '#ERROR';
 
 class Expressions {
+    private ERROR_MESSAGE = '#ERROR';
+
     readonly REGEX_TO_ACTION = [
-        {regularExpression: VOID_STRING, action: () => '0'},
-        {regularExpression: SUM, action: (formula: string) => this.evaluateFormula(new FormulaParser(formula, new SumOperator()).toExtendedExpression())},
-        {regularExpression: AVG, action: (formula: string) => this.evaluateFormula(new FormulaParser(formula, new AvgOperator()).toExtendedExpression())},
-        {regularExpression: KEY, action: (formula: string) => this.replaceKeyPerValue(formula, this.expressionsDictionary)},
+        {regExp: RegExpEnum.VOID_STRING, action: () => '0'},
+        {regExp: RegExpEnum.SUM, action: (formula: string) => this.evaluateFormula(new FormulaParser(formula, new SumOperator()).toExtendedExpression())},
+        {regExp: RegExpEnum.AVG, action: (formula: string) => this.evaluateFormula(new FormulaParser(formula, new AvgOperator()).toExtendedExpression())},
+        {regExp: RegExpEnum.KEY, action: (formula: string) => this.replaceKeyPerValue(formula, this.expressionsDictionary)},
     ];
 
     private expressionsDictionary: ExpressionsDictionary = {};
@@ -35,14 +32,14 @@ class Expressions {
         const valuesDictionary: ValuesDictionary = {};
 
         _.each(this.expressionsDictionary, (expression, key) => {
-            valuesDictionary[key] = this.evaluateExpression(expression)
+            valuesDictionary[key] = this.expressionToValue(expression)
         });
 
         return valuesDictionary;
     }
     
-    private evaluateExpression(expression: string): string {
-        if (!FORMULA.exec(expression)) {
+    private expressionToValue(expression: string): string {
+        if (!new RegExp(RegExpEnum.FORMULA).exec(expression)) {
             return expression;
         }
 
@@ -52,29 +49,29 @@ class Expressions {
 
     private evaluateFormula(formula: string): string {
         try {
-            const regExpressionFulfilled = this.REGEX_TO_ACTION.find(x => x.regularExpression.exec(formula));
+            const regexToAction = this.REGEX_TO_ACTION.find(x => new RegExp(x.regExp).exec(formula));
 
-            if (regExpressionFulfilled) {
-                return regExpressionFulfilled.action(formula);
+            if (regexToAction) {
+                return regexToAction.action(formula);
             }
 
             return eval(formula).toString();
         } catch (e) {
-            return ERROR_MESSAGE;
+            return this.ERROR_MESSAGE;
         }
     }
 
     private replaceKeyPerValue(formula: string, expressionsDictionary: ExpressionsDictionary) {
-        const match = KEY.exec(formula);
+        const match = new RegExp(RegExpEnum.KEY).exec(formula);
 
         if (!match || !new CellKey(match[0]).valid()) {
-            return ERROR_MESSAGE;
+            return this.ERROR_MESSAGE;
         }
 
         const key = match[0];
 
         const value = expressionsDictionary[key] ?
-            this.evaluateExpression(expressionsDictionary[key])
+            this.expressionToValue(expressionsDictionary[key])
             : '0';
 
         return this.evaluateFormula(formula.replace(key, value));

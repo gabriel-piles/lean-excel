@@ -1,8 +1,10 @@
 import {Operator} from '../Formula';
+import {RegExpEnum} from "../../RegExpEnum";
 
 class AvgOperator implements Operator{
-    public regularExpression = /((AVG\()([^\)]+)\))/;
-
+    regularExpression() {
+        return RegExpEnum.AVG;
+    }
     arrayToExpression(array: Array<string>): string {
         const numberOfInputs = array.length;
 

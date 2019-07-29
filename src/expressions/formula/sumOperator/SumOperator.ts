@@ -1,7 +1,10 @@
 import {Operator} from '../Formula';
+import {RegExpEnum} from '../../RegExpEnum';
 
 class SumOperator implements Operator{
-    public regularExpression = /((SUM\()([^\)]+)\))/;
+    regularExpression() {
+        return RegExpEnum.SUM;
+    }
 
     arrayToExpression(array: Array<string>): string {
         if(!array.length){

@@ -1,7 +1,7 @@
 import {CellKey} from '../cellKey/CellKey';
 
 export interface Operator{
-    regularExpression: RegExp;
+    regularExpression(): string;
     arrayToExpression(array:Array<string>):string;
 }
 
@@ -15,7 +15,7 @@ class FormulaParser{
     }
 
     public toExtendedExpression():string {
-        const match = this.operator.regularExpression.exec(this.formula);
+        const match = new RegExp(this.operator.regularExpression()).exec(this.formula);
 
         if (!match) {
             throw new Error('Invalid sum formula');
