@@ -2,13 +2,10 @@
 
 Basic excel application built in few days with the following stack:
 
-React 16.8
-
-Typescript 3.5
-
-Enzyme 3.10
-
-Cypress 3.4
+* React 16.8
+* Typescript 3.5
+* Enzyme 3.10
+* Cypress 3.4
 
 You can see the project running here:
 
